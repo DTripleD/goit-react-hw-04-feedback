@@ -2,9 +2,9 @@ import styled from '@emotion/styled';
 
 export const Button = styled.button`
   background-color: ${props =>
-    (props.value === 'good' && 'green') ||
-    (props.value === 'neutral' && 'orange') ||
-    (props.value === 'bad' && 'red')};
+    (props.children === 'good' && 'green') ||
+    (props.children === 'neutral' && 'orange') ||
+    (props.children === 'bad' && 'red')};
   border: none;
   color: white;
   padding: 16px 32px;
